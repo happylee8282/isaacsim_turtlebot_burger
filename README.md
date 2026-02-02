@@ -12,7 +12,7 @@ The project focuses on building a complete simulation-based mobile robot pipelin
 - Bridge simulated sensors to ROS2 Humble
 - Perform SLAM using `slam_toolbox`
 - Execute autonomous navigation using `Nav2`
-- Maintain a consistent TF tree (`map → odom → base_link → sensors`)
+- Maintain a consistent TF tree (`map → odom → base_footprint → sensors`)
 
 ### Key Features
 - Isaac Sim LiDAR simulation
@@ -30,7 +30,9 @@ Isaac Sim 5.0
 ├─ LiDAR 
 ├─ Physics & Time Step
 └─ ROS2 Bridge
+
 ↓
+
 ROS2 Humble
 ├─ TF (map → odom → base_link)
 ├─ /scan, /imu, /odom
