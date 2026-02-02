@@ -26,17 +26,25 @@ The project focuses on building a complete simulation-based mobile robot pipelin
 ## 2. System Architecture
 
 Isaac Sim 5.0
+
 ├─ TurtleBot3 USD
-├─ LiDAR 
+
+├─ LiDAR
+
 ├─ Physics & Time Step
+
 └─ ROS2 Bridge
 
 ↓
 
 ROS2 Humble
+
 ├─ TF (map → odom → base_link)
+
 ├─ /scan, /imu, /odom
+
 ├─ slam_toolbox
+
 └─ Nav2 (planner, controller, bt_navigator)
 
 
